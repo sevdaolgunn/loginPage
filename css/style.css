@@ -8,10 +8,8 @@
 body {
     margin: 0;
     padding: 0;
-    background: linear-gradient(120deg,  #a8c0ff,#3f2b96);
     height: 100vh;
     overflow: hidden;
-
 }
 .center{
     position: absolute;
@@ -19,8 +17,8 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 500px;
-    height: 500px;
-    background: rgb(235, 228, 228);
+    height: 600px;
+    background: rgb(255, 255, 255);
     border-radius: 10px;
     box-shadow:10px 10px 15px rgba(0,0,0,0.05) ;
 }
@@ -30,7 +28,7 @@ body {
    
 
 }
-center form{
+.center form{
     padding: 0 40px;
     box-sizing: border-box;
 }
@@ -82,7 +80,9 @@ form .input_txt{
     width: 100%;
 }
 .pass{
-    margin: -5px 0 20px 5px;
+    text-align: right;
+    margin: 0px 0 20px -5px;
+    margin-right: 20px;
     color: #665d5d;
     cursor: pointer;
     
@@ -93,17 +93,19 @@ form .input_txt{
 
 }
 input[type="submit"]{
-    width: 100%;
+    position: relative;
+    left: 25%;
+    width: 50%;
     height: 50px;
     border: 1px solid;
-    background: #6381ce;
+    background: -webkit-linear-gradient(right, #f17989, #eaafc8, #a8c0ff); 
     border-radius: 25px;
     font-size: 18px;
     color: #eff4f5;
     font-weight: 700;
     cursor: pointer;
     outline: none;
-    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    box-shadow: rgba(134, 91, 91, 0.15) 2.4px 2.4px 3.2px;
 
 }
 input[type="submit"]:hover{
@@ -127,3 +129,10 @@ input[type="submit"]:hover{
 .signup_btn a:hover{
     text-decoration: underline;
 }
+.socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
